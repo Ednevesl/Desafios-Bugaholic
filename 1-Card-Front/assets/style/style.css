@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Variáveis em CSS*/
+:root {
+    --purple: #9F3FFF;
+    --white-purple: #B367FF;
+    --dark: #212129;
+    --white: #FFFFFF;
+    --font-dark: #6E798C;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+}
+
+/*Card*/
+.card{
+    width: 35rem;
+    height: 14rem;
+    background-color: var(--white);
+    font-family: var(--font-primary);
+    color: var(--purple);
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-box-shadow: 8px -7px 33px 2px rgba(0,0,0,0.15); 
+    box-shadow: 8px -7px 33px 2px rgba(0,0,0,0.15);
+
+    /*Display Flex*/
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+
+}
+
+.first-side{
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(92.79deg, #AE5CFF 0%, #B468FF 47.4%, #9A34FF 100%);
+    padding: 1rem;
+    border-radius: 10px 0px 0px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-bugaholics{
+    width: 10.3rem;
+    height: 8.4rem;
+}
+
+.second-side{
+    width: 60%;
+    height: 100%;
+    padding: 1rem;
+    color: var(--font-dark);
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.title-card{
+    width: 90%;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+}
+
+.text-card{
+    width: 90%;
+    font-size: .85rem;
+}
+
+.close-button{
+    cursor: pointer;
+}
+
+.card-footer{
+    margin-top: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--purple);
+    font-size: .8rem;
+}
+
+.footer-side{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.card-avatar{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30px;
+}
